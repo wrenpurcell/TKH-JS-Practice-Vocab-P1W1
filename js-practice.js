@@ -61,12 +61,18 @@ for (let i = 10; i >= 0; i--) {
 
 //5. objects
 //a. define a variable named 'bike'
+let bike;
 
 //b. assign an object to bike
+bike = [];
 
 //c. give the object 3 properties: handlebars, color, wheels
-
 //d. give each property a value
+
+bike.handlebars = "curved";
+bike.color = "green";
+bike.wheels = "28 inches";
+console.log(bike);
 
 //6. Chessboard
 /*Write a function that creates a string that represents an 8×8 grid, using newline characters to separate lines. At each position of the grid there is either a space or a "#" character. The characters should form a chessboard.
