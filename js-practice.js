@@ -53,6 +53,11 @@ const myArray = [1, 2, 3, 4, 5];
 
 //4. loops
 //a. write a for loop that console logs even numbers starting at 10 and decrementing to 0
+for (let i = 10; i >= 0; i--) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
 
 //5. objects
 //a. define a variable named 'bike'
