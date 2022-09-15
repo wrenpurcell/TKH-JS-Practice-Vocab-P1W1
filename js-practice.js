@@ -92,24 +92,37 @@ When you have a program that generates this pattern, define a binding size = 8 a
 read and refer to https://eloquentjavascript.net/02_program_structure.html  there are hints at the bottom of the page 
 */
 
-function createGrid(width, height) {
+// Uses 8 as default value when parameter is not entered
+function createGrid(width = 8, height = 8) {
+  // define grid
+  let grid = "";
+  // Create for loop to create each row (row #)
   for (let i = 0; i < height; i++) {
-    let gridLine = "";
+    // Create for loop for each space in each row (col #)
     for (let j = 0; j < width; j++) {
+      // if the col # is even and row # is even add a space
       if (j % 2 === 0 && i % 2 === 0) {
-        gridLine += " ";
-      } else if (j % 2 === 1 && i % 2 === 0) {
-        gridLine += "#";
-      } else if (j % 2 === 1 && i % 2 === 1) {
-        gridLine += " ";
-      } else {
-        gridLine += "#";
+        grid += " ";
+      }
+      // if the col # is odd and row # is even add a #
+      else if (j % 2 === 1 && i % 2 === 0) {
+        grid += "#";
+      }
+      // if the column # is odd and row # is even add a #
+      else if (j % 2 === 1 && i % 2 === 1) {
+        grid += " ";
+      }
+      // else add "#"
+      else {
+        grid += "#";
       }
     }
-    console.log(gridLine);
-    gridLine = "";
+    // now that the row is complete add a newLine
+    grid += "\n";
   }
+  // after grid is complete return the grid
+  return grid;
 }
 
-createGrid(8, 8);
-createGrid(21, 3);
+console.log(createGrid(8, 8));
+console.log(createGrid(21, 3));
