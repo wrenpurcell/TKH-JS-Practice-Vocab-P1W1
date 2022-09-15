@@ -14,12 +14,22 @@ console.log(isProgrammer);
 
 //2. if else, ternary
 //a. define a variable 'metrocard' and give it a value of 5
+let metrocard = 5;
 
 //b. write an if statement that has a condition to check if the value of metro card is greater than 2.75, and display the message "you have enough to ride the train", if the condition is true
+if (metrocard > 2.75) {
+  console.log("You have enough to ride the train");
+}
 
 //c.write an else statement that displays the message "you do not have enough to pay fare sorry"
+else {
+  console.log("You do not have enough to pay fare sorry");
+}
 
 //d. write the above if/else statement again as a ternary
+metrocard > 2.75
+  ? console.log("You have enough to ride the train")
+  : console.log("You do not have enough to pay fare sorry");
 
 //3. conditionals 2 (1 pt)
 //a.  complete this codecademy project: https://www.codecademy.com/courses/introduction-to-javascript/projects/magic-eight-ball-1
