@@ -91,3 +91,25 @@ When you have a program that generates this pattern, define a binding size = 8 a
 
 read and refer to https://eloquentjavascript.net/02_program_structure.html  there are hints at the bottom of the page 
 */
+
+function createGrid(width, height) {
+  for (let i = 0; i < height; i++) {
+    let gridLine = "";
+    for (let j = 0; j < width; j++) {
+      if (j % 2 === 0 && i % 2 === 0) {
+        gridLine += " ";
+      } else if (j % 2 === 1 && i % 2 === 0) {
+        gridLine += "#";
+      } else if (j % 2 === 1 && i % 2 === 1) {
+        gridLine += " ";
+      } else {
+        gridLine += "#";
+      }
+    }
+    console.log(gridLine);
+    gridLine = "";
+  }
+}
+
+createGrid(8, 8);
+createGrid(21, 3);
