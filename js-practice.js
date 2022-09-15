@@ -37,14 +37,19 @@ metrocard > 2.75
 
 //4. functions
 //a. write a function named helloWorld that returns the value 'Hello World!'
+function helloWorld() {
+  return "Hello World!";
+}
 
 //b. console log the value returned from running the function helloWorld
+console.log(helloWorld());
 
 //3. arrays
 //a. define a variable myArray and assign it to a value of an array. Give the array at least 5 elements
+const myArray = [1, 2, 3, 4, 5];
 
 //b. an array's index starts at:
-//
+// 0
 
 //4. loops
 //a. write a for loop that console logs even numbers starting at 10 and decrementing to 0
