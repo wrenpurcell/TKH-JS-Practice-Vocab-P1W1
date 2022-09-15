@@ -1,4 +1,5 @@
-//Complete the instructions for each numbered problem
+//Complete the instructions for each numbered problem. Each numbered problem is worth 10 points
+
 
 //1. data types built-in methods, variables
 
@@ -27,9 +28,11 @@ else {
 }
 
 //d. write the above if/else statement again as a ternary
+
 metrocard > 2.75
   ? console.log("You have enough to ride the train")
   : console.log("You do not have enough to pay fare sorry");
+
 
 //3. conditionals 2 (1 pt)
 //a.  complete this codecademy project: https://www.codecademy.com/courses/introduction-to-javascript/projects/magic-eight-ball-1
@@ -37,12 +40,14 @@ metrocard > 2.75
 
 //4. functions
 //a. write a function named helloWorld that returns the value 'Hello World!'
+
 function helloWorld() {
   return "Hello World!";
 }
 
 //b. console log the value returned from running the function helloWorld
 console.log(helloWorld());
+
 
 //3. arrays
 //a. define a variable myArray and assign it to a value of an array. Give the array at least 5 elements
@@ -87,7 +92,8 @@ Passing this string to console.log should show something like this:
 # # # # 
  # # # #
 # # # #
-When you have a program that generates this pattern, define a binding size = 8 and change the program so that it works for any size, outputting a grid of the given width and height.
+When you have a program that generates this pattern, define a binding size = 8. 
+**You do not need to accept user input this differs from Eloquent JS's directions 
 
 read and refer to https://eloquentjavascript.net/02_program_structure.html  there are hints at the bottom of the page 
 */
@@ -137,3 +143,4 @@ console.log(createGrid(21, 3));
 //       grid += "#";
 //     }
 //   }
+
