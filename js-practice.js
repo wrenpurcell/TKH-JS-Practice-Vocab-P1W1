@@ -100,19 +100,11 @@ function createGrid(width = 8, height = 8) {
   for (let i = 0; i < height; i++) {
     // Create for loop for each space in each row (col #)
     for (let j = 0; j < width; j++) {
-      // if the col # is even and row # is even add a space
-      if (j % 2 === 0 && i % 2 === 0) {
+      // if the sum of col # && row # is even, add a space
+      if ((j + i) % 2 === 0) {
         grid += " ";
       }
-      // if the col # is odd and row # is even add a #
-      else if (j % 2 === 1 && i % 2 === 0) {
-        grid += "#";
-      }
-      // if the column # is odd and row # is even add a #
-      else if (j % 2 === 1 && i % 2 === 1) {
-        grid += " ";
-      }
-      // else add "#"
+      // else add a "#"
       else {
         grid += "#";
       }
@@ -126,3 +118,22 @@ function createGrid(width = 8, height = 8) {
 
 console.log(createGrid(8, 8));
 console.log(createGrid(21, 3));
+
+// for (let j = 0; j < width; j++) {
+//     // if the col # is even and row # is even add a space
+//     if (j % 2 === 0 && i % 2 === 0) {
+//       grid += " ";
+//     }
+//     // if the col # is odd and row # is even add a #
+//     else if (j % 2 === 1 && i % 2 === 0) {
+//       grid += "#";
+//     }
+//     // if the column # is odd and row # is even add a #
+//     else if (j % 2 === 1 && i % 2 === 1) {
+//       grid += " ";
+//     }
+//     // else add "#"
+//     else {
+//       grid += "#";
+//     }
+//   }
